@@ -47,7 +47,7 @@ const EditProfile = (props) => {
         noButton={true}
       />
       <div className="flex justify-center">
-        <div className="card bg-base-100 image-full w-96 shadow-xl">
+        <div className="card bg-base-300 w-96 shadow-xl">
           <div className="card-body">
             <h2 className="card-title justify-center">Edit Profile</h2>
             <div className="py-2">

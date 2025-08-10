@@ -28,11 +28,19 @@ const UserCard = ({ user, refresh, noButton = false }) => {
   return (
     <div className="card bg-base-300 w-96 shadow-xl">
       <figure>
-        <img className="text-center w-96 h-96" src={photoUrl} alt={firstName + " profile photo"} />
+        <img
+          className="text-center w-96 h-96"
+          src={photoUrl}
+          alt={firstName + " profile photo"}
+        />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{firstName + " " + lastName}</h2>
-        <p>{(age && age) + (gender && ", " + gender)} </p>
+        <p>
+          {(age ? age : "") +
+            (age && gender ? ", " : "") +
+            (gender ? gender : "")}{" "}
+        </p>
         <p>{about}</p>
         {!noButton && (
           <div className="card-actions justify-center mt-4">

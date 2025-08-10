@@ -20,7 +20,9 @@ const NavBar = () => {
   return (
     <div className="navbar bg-base-200">
       <div className="flex-1">
-        <Link to="/" className="btn btn-ghost text-xl">DevTinder</Link>
+        <Link to="/" className="btn btn-ghost text-xl">
+          DevTinder
+        </Link>
       </div>
       <div className="flex-none gap-2">
         {user && (
@@ -47,14 +49,16 @@ const NavBar = () => {
                 <li>
                   <Link to="/profile">Profile</Link>
                 </li>
-                 <li>
-                  <Link to="/requests">Connection Requests</Link>
+                <li>
+                  <Link to="/requests">Requests</Link>
                 </li>
                 <li>
                   <Link to="/connections">Connections</Link>
                 </li>
                 <li>
-                  <Link to="/login" onClick={handleLogout}>Logout</Link>
+                  <Link to="/login" onClick={handleLogout}>
+                    Logout
+                  </Link>
                 </li>
               </ul>
             </div>
