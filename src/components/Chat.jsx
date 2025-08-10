@@ -79,7 +79,7 @@ const Chat = () => {
   const scrollToBottom = () => {
     const el = bottomRef.current;
     if (el) {
-      setTimeout(() => (el.scrollTop = el.scrollHeight), 300);
+      el.scrollTop = el.scrollHeight;
     }
   };
 
